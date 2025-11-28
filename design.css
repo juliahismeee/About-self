@@ -1,0 +1,159 @@
+/* === Global Styles === */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5F8; /* soft pink background */
+    color: #4A4A4A;
+    line-height: 1.6;
+}
+
+/* === Header === */
+header {
+    background-color: #FFD6E8; /* baby pink */
+    color: #7A4F7D; /* soft plum for contrast */
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 3px solid #E8BDEB; /* pastel border */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-size: 2.3em;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1em;
+    margin-top: 8px;
+    color: #8C5A8A;
+}
+
+/* === Navigation Bar === */
+nav {
+    background-color: #E8BDEB; /* pastel lavender */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #6A3668;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 18px;
+    display: block;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #FFD6E8;
+    color: #6A3668;
+    transform: scale(1.08);
+}
+
+/* === Main Content === */
+main {
+    background-color: #FFFFFF;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #7A4F7D;
+    border-bottom: 2px solid #FFD6E8;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+/* === Profile Image === */
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 4px solid #FFE9F3;
+    object-fit: cover;
+}
+
+/* === Hobbies List === */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    background: #FFF0F6;
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+    color: #5B3E58;
+}
+
+ul li:hover {
+    background-color: #FFE4EE;
+    transform: scale(1.02);
+}
+
+/* === Footer === */
+footer {
+    background-color: #E8BDEB;
+    color: #6A3668;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    margin-top: 40px;
+    border-top: 3px solid #FFD6E8;
+}
+
+/* === Responsive Design === */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 8px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+}
+/* ...existing code... */
+
+img.profile {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #ccc;
+}
